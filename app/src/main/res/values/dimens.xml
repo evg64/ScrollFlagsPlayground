@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_extra_small">4dp</dimen>
+    <dimen name="margin_medium">16dp</dimen>
+    <dimen name="expanded_appbar_height">250dp</dimen>
+    <dimen name="scroll_item_height">300dp</dimen>
+</resources>

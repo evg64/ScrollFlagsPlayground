@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ScrollFlagsPlayground</string>
+    <string name="test_flags">Test flags</string>
+    <string name="app_layout_scroll_flags">app:layout_scrollFlags</string>
+    <string name="app_layout_collapse_mode">app:layout_collapseMode</string>
+    <string name="scroll">scroll</string>
+    <string name="snap">snap</string>
+    <string name="enter_always">enter_always</string>
+    <string name="enter_always_collapsed">enter_always_collapsed</string>
+    <string name="exit_until_collapsed">exit_until_collapsed</string>
+    <string name="none">none</string>
+    <string name="pin">pin</string>
+    <string name="parallax">parallax</string>
+    <string name="title">Title</string>
+</resources>
