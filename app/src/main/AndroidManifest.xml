@@ -12,9 +12,13 @@
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
         <activity
-            android:name=".CoordinatorActivity"
+            android:name=".scrollflags.ScrollFlagsActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".screenorientation.ScreenOrientationActivity"
+            android:configChanges="orientation|layoutDirection|screenLayout|screenSize"
+            />
+        <activity android:name=".configscreen.ConfigActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

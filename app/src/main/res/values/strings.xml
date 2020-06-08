@@ -12,4 +12,24 @@
     <string name="pin">pin</string>
     <string name="parallax">parallax</string>
     <string name="title">Title</string>
+    <string name="scroll_flags">Scroll flags</string>
+    <string name="screen_orientation">Screen orientation</string>
+    <string name="go">Go!</string>
+    <string name="orientation_behind">behind</string>
+    <string name="orientation_unspecified">unspecified</string>
+    <string name="orientation_landscape">landscape</string>
+    <string name="orientation_portrait">portrait</string>
+    <string name="orientation_user">user</string>
+    <string name="orientation_sensor">sensor</string>
+    <string name="orientation_nosensor">nosensor</string>
+    <string name="orientation_sensor_landscape">sensor_landscape</string>
+    <string name="orientation_sensor_portrait">sensor_portrait</string>
+    <string name="orientation_reverse_landscape">reverse_landscape</string>
+    <string name="orientation_reverse_portrait">reverse_portrait</string>
+    <string name="orientation_full_sensor">full_sensor</string>
+    <string name="orientation_user_landscape">user_landscape</string>
+    <string name="orientation_user_portrait">user_portrait</string>
+    <string name="orientation_full_user">full_user</string>
+    <string name="orientation_locked">locked</string>
+    <string name="activity_screen_orientation">screen orientation</string>
 </resources>

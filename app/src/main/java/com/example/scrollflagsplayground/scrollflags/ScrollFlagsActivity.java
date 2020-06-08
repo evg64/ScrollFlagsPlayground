@@ -1,4 +1,4 @@
-package com.example.scrollflagsplayground;
+package com.example.scrollflagsplayground.scrollflags;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -10,17 +10,18 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import com.example.scrollflagsplayground.R;
 import com.google.android.material.appbar.AppBarLayout;
 import com.google.android.material.appbar.CollapsingToolbarLayout;
 
-public class CoordinatorActivity extends AppCompatActivity {
+public class ScrollFlagsActivity extends AppCompatActivity {
 
     private static final String EXTRA_SCROLL_FLAGS = "EXTRA_SCROLL_FLAGS";
     private static final String EXTRA_COLLAPSE_MODE = "EXTRA_COLLAPSE_MODE";
     private static final int NOTHING = -1;
 
     public static void launch(Activity from, int scrollFlags, int collapseMode) {
-        Intent intent = new Intent(from, CoordinatorActivity.class);
+        Intent intent = new Intent(from, ScrollFlagsActivity.class);
         intent.putExtra(EXTRA_SCROLL_FLAGS, scrollFlags);
         intent.putExtra(EXTRA_COLLAPSE_MODE, collapseMode);
         from.startActivity(intent);
@@ -66,8 +67,8 @@ public class CoordinatorActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         ActionBar actionBar = getSupportActionBar();
         if (actionBar != null) {
-            actionBar.setDisplayHomeAsUpEnabled(true);
-            // actionBar.setTitle("Title");
+            // actionBar.setDisplayHomeAsUpEnabled(true);
+            actionBar.setTitle("4%");
         }
     }
 }

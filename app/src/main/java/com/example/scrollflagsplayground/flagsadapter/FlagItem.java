@@ -1,4 +1,4 @@
-package com.example.scrollflagsplayground;
+package com.example.scrollflagsplayground.flagsadapter;
 
 /**
  * @author Evgeny Chumak

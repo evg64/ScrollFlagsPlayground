@@ -1,15 +1,15 @@
-package com.example.scrollflagsplayground;
+package com.example.scrollflagsplayground.scrollflags;
 
 import androidx.annotation.NonNull;
 
 /**
  * @author Evgeny Chumak
  **/
-class CollapseMode {
+public class CollapseMode {
     private final int mMode;
     private final String mText;
 
-    CollapseMode(int mode, String text) {
+    public CollapseMode(int mode, String text) {
         mMode = mode;
         mText = text;
     }

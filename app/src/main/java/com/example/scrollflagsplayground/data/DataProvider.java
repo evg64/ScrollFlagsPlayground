@@ -1,7 +1,10 @@
-package com.example.scrollflagsplayground;
+package com.example.scrollflagsplayground.data;
 
 import android.content.res.Resources;
 
+import com.example.scrollflagsplayground.scrollflags.CollapseMode;
+import com.example.scrollflagsplayground.flagsadapter.FlagItem;
+import com.example.scrollflagsplayground.R;
 import com.google.android.material.appbar.AppBarLayout.LayoutParams;
 import com.google.android.material.appbar.CollapsingToolbarLayout;
 
@@ -11,15 +14,11 @@ import java.util.List;
 /**
  * @author Evgeny Chumak
  **/
-class DataProvider {
+public class DataProvider {
 
     private final Resources mResources;
 
-    DataProvider(Resources resources) {
-        mResources = resources;
-    }
-
-    List<FlagItem> getScrollFlagItems() {
+    public  List<FlagItem> getScrollFlagItems() {
         return Arrays.asList(
                 new FlagItem(
                         LayoutParams.SCROLL_FLAG_SCROLL,
@@ -29,7 +28,7 @@ class DataProvider {
                 new FlagItem(
                         LayoutParams.SCROLL_FLAG_SNAP,
                         mResources.getString(R.string.snap),
-                        false
+                        true
                 ),
                 new FlagItem(
                         LayoutParams.SCROLL_FLAG_ENTER_ALWAYS,
@@ -44,12 +43,16 @@ class DataProvider {
                 new FlagItem(
                         LayoutParams.SCROLL_FLAG_EXIT_UNTIL_COLLAPSED,
                         mResources.getString(R.string.exit_until_collapsed),
-                        false
+                        true
                 )
         );
     }
 
-    List<CollapseMode> getCollapseModeItems() {
+    public DataProvider(Resources resources) {
+        mResources = resources;
+    }
+
+    public List<CollapseMode> getCollapseModeItems() {
         return Arrays.asList(
                 new CollapseMode(CollapsingToolbarLayout.LayoutParams.COLLAPSE_MODE_OFF, mResources.getString(R.string.none)),
                 new CollapseMode(CollapsingToolbarLayout.LayoutParams.COLLAPSE_MODE_PIN, mResources.getString(R.string.pin)),
@@ -57,7 +60,7 @@ class DataProvider {
         );
     }
 
-    int calculateScrollFlags(List<FlagItem> items) {
+    public int calculateScrollFlags(List<FlagItem> items) {
         int result = 0;
         for (FlagItem item : items) {
             if (item.isSelected()) {
@@ -66,4 +69,5 @@ class DataProvider {
         }
         return result;
     }
+
 }

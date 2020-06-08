@@ -1,4 +1,4 @@
-package com.example.scrollflagsplayground;
+package com.example.scrollflagsplayground.flagsadapter;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -7,6 +7,8 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.scrollflagsplayground.R;
 
 import java.util.ArrayList;
 import java.util.Collections;
